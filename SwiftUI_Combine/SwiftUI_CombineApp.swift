@@ -4,6 +4,19 @@
 //
 //  Created by twave on 2020/10/08.
 //
+//https://levelup.gitconnected.com/building-an-ios-app-using-swiftui-combine-mvvm-part-2-a0a703269907
+//https://github.com/KeatoonMask/BookList
+
+/*
+ 설명
+ https://levelup.gitconnected.com/building-an-ios-app-using-swiftui-combine-mvvm-part-2-a0a703269907
+ 
+ Git Repository
+ https://github.com/KeatoonMask/BookList
+ 
+ https://medium.com/swlh/getting-started-with-swiftui-and-combine-using-mvvm-and-protocols-for-ios-d8c37731a1d9
+ 
+ */
 
 import SwiftUI
 
