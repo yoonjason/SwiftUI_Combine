@@ -52,6 +52,7 @@
 		1B72227D252EF6800053A129 /* SwiftUI_CombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_CombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B722281252EF6800053A129 /* SwiftUI_CombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_CombineUITests.swift; sourceTree = "<group>"; };
 		1B722283252EF6800053A129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7B07E52534271700FE143F /* MyPlayGround2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayGround2.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1BB43F7F252EFFC100C0EDA2 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		1BB43F87252F009B00C0EDA2 /* BookDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
 		1BB43F8C252F014B00C0EDA2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		1BB43F96252F01D100C0EDA2 /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
 		1BB43F9B252F093B00C0EDA2 /* MockBookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookService.swift; sourceTree = "<group>"; };
 		1BB43FA1252F123300C0EDA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1BEA62AE2533E5DF006A49EF /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		1B722263252EF67E0053A129 /* SwiftUI_Combine */ = {
 			isa = PBXGroup;
 			children = (
+				1BEA62AD2533E5C0006A49EF /* TestPlayGround */,
 				1BB43FA0252F121600C0EDA2 /* MVVM */,
 				1BB43F7D252EFF6000C0EDA2 /* Model */,
 				1B722264252EF67E0053A129 /* SwiftUI_CombineApp.swift */,
@@ -173,6 +176,15 @@
 				1BB43FA1252F123300C0EDA2 /* ViewModel.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		1BEA62AD2533E5C0006A49EF /* TestPlayGround */ = {
+			isa = PBXGroup;
+			children = (
+				1BEA62AE2533E5DF006A49EF /* MyPlayground.playground */,
+				1B7B07E52534271700FE143F /* MyPlayGround2.playground */,
+			);
+			path = TestPlayGround;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -26,10 +26,86 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MyToggleButton: View {
+    @Binding var value: Bool
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button(
+            action: {
+                self.value.toggle()
+            },
+            label: {
+                Text(self.value ? "Hello" : "World")
+            }
+        )
+    }
+}
+
+class MyData: ObservableObject {
+    @Published var name = "World"
+    @Published var buttonTitle = "Switch to Universe"
+
+    func switchName() {
+        if name == "World" {
+            name = "Universe"
+            buttonTitle = "Switch to World"
+        } else {
+            name = "World"
+            buttonTitle = "Switch to Universe"
+        }
+    }
+}
+
+//@State
+//struct ContentView: View {
+//    @State private var name = "World"
+//    var body: some View {
+//        VStack {
+//            Text("Hello, \(name)")
+//                .padding()
+//            Button(
+//                action: { self.switchName() },
+//                label: { Text("Switch") }
+//            )
+//        }
+//
+//    }
+//
+//    func switchName() {
+//        if case name = "World" {
+//            name = "Universe"
+//        } else {
+//            name = "World"
+//        }
+//    }
+//}
+
+
+//@binding
+//struct ContentView: View {
+//    @State private var value = false
+//
+//    var body: some View {
+//        VStack {
+//            MyToggleButton(value: $value)
+//        }
+//    }
+//}
+
+//@ObservableObject and ObservedObject
+struct ContentView: View {
+    @ObservedObject var data = MyData()
+
+    var body: some View {
+        VStack {
+            Text("Hello, \(data.name)!")
+                .padding()
+            Button(
+                action: { self.data.switchName() }, label: {
+                    Text(self.data.buttonTitle)
+                }
+            )
+        }
     }
 }
 
